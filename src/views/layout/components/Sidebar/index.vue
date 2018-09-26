@@ -1,6 +1,10 @@
 <template>
 <el-scrollbar style="height:100%" wrapClass="scrollbar-wrapper">
-    <el-menu default-active="1-1"  class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" background-color="#304156" text-color="#bfcbd9" active-text-color="#409EFF">
+    <el-menu
+      default-active="2"
+      class="el-menu-vertical-demo"
+      @open="handleOpen"
+      @close="handleClose">
         <sidebar-item></sidebar-item>
     </el-menu>
 </el-scrollbar>

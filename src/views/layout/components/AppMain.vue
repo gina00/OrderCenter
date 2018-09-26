@@ -1,8 +1,7 @@
 <template>
 <section class="app-main">
-    <transition  name="fade-transform" mode="out-in" appear='true'>
+    <transition  name="fade-transform" mode="out-in">
         <router-view></router-view>
-    <div>maincontent</div>
     </transition>
 </section>
 </template>
