@@ -7,6 +7,7 @@
         <div class="side-content">
             <side-bar></side-bar>
         </div>
+        
         <div class="main-content">
             <app-main></app-main>
         </div>
@@ -39,7 +40,7 @@ export default {
     min-height: 800px;
     -webkit-transition: margin-left .28s;
     transition: margin-left .28s;
-    margin-left: 200px;
+    margin-left: 230px;
     position: relative;
     top: 60px;
     background: #f5f7fa;
