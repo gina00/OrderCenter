@@ -14,17 +14,16 @@ export const constantRouterMap = [{
     children: [{
         path: 'dashboard',
         component: () =>
-            import ('@/views/dashboard/index')
+            import('@/views/dashboard/index')
     }]
 }, {
     path: '/card',
     component: Layout,
-    redirect: '/card/index',
     name: 'ChangeCard',
     children: [{
-        path: 'card',
+        path: 'index',
         component: () =>
-            import ('@/views/card/cardlayout')
+            import('@/views/card/cardlayout')
     }]
 }]
 
