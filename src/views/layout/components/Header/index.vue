@@ -18,11 +18,11 @@
                 prefix-icon="el-icon-search"
                 v-model="searchVal">
             </el-input>
-            <div class="user">
-                <span>welcome Admin!</span>
-                <i class="fa fa-user"></i>
-            </div>
-        </div>        
+        </div> 
+        <div class="user">
+            <span class="userText">welcome Admin!</span>
+            <i class="fa fa-user-circle-o"></i>
+        </div>
     </div>      
 </section>
 </template>
@@ -62,10 +62,23 @@ export default {
   .right-box {
     float: right;
     line-height: 60px;
+    margin: 0 20px;
     .searchBox {
       float: left;
-      .el-input__inner {
-        background-color: transparent;
+      margin-right: 20px;
+      .el-input {
+        .el-input__inner {
+          background-color: transparent !important;
+        }
+      }
+    }
+    .user {
+      float: left;
+      font-size: 30px;
+      color: #fff;
+      .userText {
+        font-size: 14px;
+        vertical-align: middle;
       }
     }
   }

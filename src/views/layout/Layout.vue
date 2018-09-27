@@ -7,7 +7,6 @@
         <div class="side-content">
             <side-bar></side-bar>
         </div>
-        
         <div class="main-content">
             <app-main></app-main>
         </div>
