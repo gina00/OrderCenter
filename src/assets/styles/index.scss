@@ -1,12 +1,14 @@
 @import './sidebar.scss';
 @import './navbar.scss';
 @import './transition.scss';
+@import './element-ui.scss';
+@import './cardcommon.scss';
 body {
     height: 100%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+    font-family: PingFangSC-Semibold, "Microsoft YaHei", Arial, sans-serif, Helvetica, STHeiti // font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
 }
 
 ul,
@@ -15,10 +17,6 @@ p {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-label {
-    font-weight: 700;
 }
 
 html {
@@ -71,4 +69,8 @@ a:hover {
         clear: both;
         height: 0;
     }
+}
+
+.fr {
+    float: right;
 }

@@ -20,11 +20,12 @@ export const constantRouterMap = [{
     path: '/card',
     component: Layout,
     redirect: '/card/index',
-    name: 'ChangeCard',
+    name: 'card',
+    hidden: true,
     children: [{
-        path: 'card',
+        path: 'index',
         component: () =>
-            import ('@/views/card/cardlayout')
+            import ('@/views/card/index')
     }]
 }]
 

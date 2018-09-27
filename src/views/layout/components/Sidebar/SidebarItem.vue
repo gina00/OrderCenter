@@ -1,6 +1,6 @@
 <template>
 <div>
-    <router-link to="/card/index">
+    <router-link to="/card">
         <el-menu-item index="1">
             <i class="el-icon-menu"></i>
             <span slot="title">补换卡</span>

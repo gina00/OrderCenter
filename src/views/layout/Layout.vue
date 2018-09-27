@@ -43,6 +43,7 @@ export default {
     position: relative;
     top: 60px;
     background: #f5f7fa;
+    padding: 20px 30px;
 }
 
 .container {
