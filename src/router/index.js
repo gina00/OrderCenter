@@ -26,6 +26,7 @@ export const constantRouterMap = [{
         path: 'index',
         component: () =>
             import ('@/views/card/index')
+
     }]
 }]
 
