@@ -45,9 +45,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.free-c {
-    text-align: left;
-}
 
 .submitBox {
     margin: 20px;
