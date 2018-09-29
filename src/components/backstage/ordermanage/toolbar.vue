@@ -18,30 +18,19 @@
         <div class="hightsearch" @click="isShow()"><a>高级查询</a></div>
     </div>
     <search-item v-if="isshow"></search-item>
-    <div class="ordertable">
-        <el-card class="box-card">
-            <table-item></table-item>
-            <div class="paginBox">
-                <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page="currentPage4" :page-sizes="[100, 200, 300, 400]" :page-size="100" layout="total, sizes, prev, pager, next, jumper" :total="400">
-                </el-pagination>
-            </div>
-        </el-card>
-    </div>
 </section>
 </template>
 
 <script>
-import searchItem from "./hightsearch/searchitem";
-import tableItem from "./ordertable/tableitem";
+import searchItem from "./searchitem";
 export default {
     components: {
-        "search-item": searchItem,
-        'table-item': tableItem
+        "search-item": searchItem
     },
+
     data() {
         return {
             isshow: true,
-            currentPage4: 4,
             formInline: {
                 user: "",
                 region: ""
@@ -54,19 +43,11 @@ export default {
         },
         isShow() {
             this.isshow = !this.isshow;
-        },
-        handleSizeChange(val) {
-            console.log(`每页 ${val} 条`);
-        },
-        handleCurrentChange(val) {
-            console.log(`当前页: ${val}`);
         }
     }
-};
+}
 </script>
 
-<style lang="scss" scoped>
-.paginBox{
-    padding: 20px;
-}
+<style>
+
 </style>

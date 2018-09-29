@@ -21,3 +21,25 @@ $bottomColor:#e4e7ed;
     color: #666;
     border-bottom: 1px solid $bottomColor;
 }
+
+
+/*toolbar*/
+
+$color: #0d86fe;
+.toolbar {
+    font-size: 14px;
+    display: flex;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hightsearch {
+    font-size: 14px;
+    color: $color;
+    line-height: 40px;
+    margin: 0 10px;
+}
+
+.ordertable {
+    margin-top: 20px;
+}
