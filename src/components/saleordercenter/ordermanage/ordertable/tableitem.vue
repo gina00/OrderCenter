@@ -39,14 +39,11 @@
     </el-table-column>
     <el-table-column label="订单状态" prop="desc">
     </el-table-column>
-    <el-table-column
-      fixed="right"
-      label="操作"
-      width="100">
-      <template slot-scope="scope"> 
-        <el-button @click="handleClick(scope.row)" type="text" size="small">订单详情</el-button>
-        <el-button type="text" size="small">打印</el-button>
-      </template>
+    <el-table-column fixed="right" label="操作" width="100">
+        <template slot-scope="scope">
+            <el-button @click="handleClick(scope.row)" type="text" size="small">订单详情</el-button>
+            <el-button type="text" size="small">打印</el-button>
+        </template>
     </el-table-column>
 </el-table>
 </template>
@@ -54,8 +51,8 @@
 <script>
 import operaBtn from './operabtn'
 export default {
-    components:{
-        'opera-btn':operaBtn
+    components: {
+        'opera-btn': operaBtn
     },
     data() {
         return {
@@ -106,9 +103,9 @@ export default {
         }
     },
     methods: {
-      handleClick(row) {
-        console.log(row);
-      }
+        handleClick(row) {
+            console.log(row);
+        }
     },
 }
 </script>

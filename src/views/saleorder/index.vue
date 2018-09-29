@@ -2,7 +2,10 @@
 <section class="orderManageBox">
     <el-tabs v-model="editableTabsValue" type="card" editable @edit="handleTabsEdit">
         <el-tab-pane :key="item.name" v-for="item in editableTabs" :label="item.title" :name="item.name">
-           <order-manage></order-manage>
+           <order-manage v-if='item.content=="orderManage"'></order-manage>
+           <order-detail v-if='item.content=="orderDetail"'></order-detail>
+           <sub-orderdetail v-if='item.content=="suborderdetail"'></sub-orderdetail>
+           <total-orderdetails v-if='item.content=="totalorderdetails"'></total-orderdetails>
         </el-tab-pane>
     </el-tabs>
 </section>
@@ -10,9 +13,15 @@
 
 <script>
 import orderManage from '@/components/saleordercenter/ordermanage/index'
+import orderDetail from '@/components/saleordercenter/orderdetail/index'
+import suborderdetail from '@/components/saleordercenter/suborderdetail/index'
+import totalorderdetails from '@/components/saleordercenter/totalorderdetails/index'
 export default {
     components:{
-        'order-manage':orderManage
+        'order-manage':orderManage,
+        'order-detail':orderDetail,
+        'sub-orderdetail':suborderdetail,
+        'total-orderdetails':totalorderdetails
     },
     data() {
         return {
@@ -20,19 +29,19 @@ export default {
             editableTabs: [{
                 title: '订单管理',
                 name: '1',
-                content: 'printForm'
+                content: 'orderManage'
             }, {
                 title: '订单详情',
                 name: '2',
-                content: 'Tab 2 content'
+                content: 'orderDetail'
             },{
                 title: '子订单详情',
                 name: '3',
-                content: 'printForm'
+                content: 'suborderdetail'
             }, {
                 title: '订单行详情',
                 name: '4',
-                content: 'Tab 2 content'
+                content: 'totalorderdetails'
             }],
             tabIndex: 2
         }
