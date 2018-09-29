@@ -1,8 +1,9 @@
+$bottomColor:#e4e7ed;
 .titleBox {
     position: relative;
     font-size: 14px;
     color: #0d86fe;
-    border-bottom: 1px solid #e4e7ed;
+    border-bottom: 1px solid $bottomColor;
     .title-text {
         line-height: 40px;
     }
@@ -18,5 +19,5 @@
     line-height: 40px;
     font-size: 14px;
     color: #666;
-    border-bottom: 1px solid #e4e7ed;
+    border-bottom: 1px solid $bottomColor;
 }
