@@ -66,7 +66,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.paginBox{
-    padding: 20px;
-}
+
 </style>
