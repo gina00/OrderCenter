@@ -33,13 +33,6 @@ $color: #0d86fe;
     position: relative;
 }
 
-.hightsearch {
-    font-size: 14px;
-    color: $color;
-    line-height: 40px;
-    margin: 0 10px;
-}
-
 .ordertable {
     margin-top: 20px;
 }
@@ -49,4 +42,63 @@ $color: #0d86fe;
 
 .paginBox {
     padding: 20px;
+}
+
+
+/*hightsearch*/
+
+.hightsearch {
+    font-size: 14px;
+    color: $color;
+    line-height: 40px;
+    margin: 0 10px;
+    position: relative;
+    &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border-width: 8px;
+        border-style: solid;
+        border-color: transparent transparent white transparent;
+        left: 40%;
+        top: 47px;
+    }
+}
+
+.serchdetail {
+    width: 100%;
+}
+
+.inlineBox {
+    padding-top: 10px;
+}
+
+.totaltext {
+    color: #0af;
+}
+
+.serchdetail {
+    .rowBox {
+        padding: 5px 0;
+        ul {
+            display: flex;
+            li {
+                padding: 0 10px;
+                &.title {
+                    padding: 0;
+                }
+                a {
+                    &:hover {
+                        color: #0af;
+                    }
+                }
+                .el-date-editor {
+                    &.el-input {
+                        width: 160px;
+                    }
+                }
+            }
+        }
+    }
 }

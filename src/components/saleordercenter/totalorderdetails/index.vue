@@ -24,7 +24,7 @@ export default {
         }
     }
 }
-</script>
+</script> 
 
 <style lang="scss">
 
