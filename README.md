@@ -31,16 +31,16 @@ node v0.10.28+
 ## 项目前端效果：
 
 首页：
-![image](https://github.com/gina00/OrderCenter/tree/master/static/img/170535.jpg)
+![image](https://github.com/gina00/OrderCenter/blob/master/static/img/170535.jpg)
 
 一线营业员订单管理
-![image](https://github.com/gina00/OrderCenter/tree/master/static/img/170608.jpg)
+![image](https://github.com/gina00/OrderCenter/blob/master/static/img/170608.jpg)
 
 后台营业员订单管理
-![image](https://github.com/gina00/OrderCenter/tree/master/static/img/2180631.jpg)
+![image](https://github.com/gina00/OrderCenter/blob/master/static/img/2180631.jpg)
 
 支付订单管理
-![image](https://github.com/gina00/OrderCenter/tree/master/static/img/170649.jpg)
+![image](https://github.com/gina00/OrderCenter/blob/master/static/img/170649.jpg)
 
 
 
