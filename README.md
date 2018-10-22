@@ -24,9 +24,7 @@ node v0.10.28+
 
 ## 部署步骤
 1.  npm install 安装项目依赖包
-2.  node server/app 启动express 后台登录验证
-3.   npm run dev 运行项目，端口8080
-4.  用户名：admin 密码：abcd1234 
+2.  npm run dev 运行项目，端口8850
 
 ## 项目前端效果：
 
