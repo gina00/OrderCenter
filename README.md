@@ -37,7 +37,7 @@ node v0.10.28+
 ![image](https://github.com/gina00/OrderCenter/blob/master/static/img/170608.jpg)
 
 ###### 后台营业员订单管理
-![image](https://github.com/gina00/OrderCenter/blob/master/static/img/2180631.jpg)
+![image](https://github.com/gina00/OrderCenter/blob/master/static/img/2170631.jpg)
 
 ###### 支付订单管理
 ![image](https://github.com/gina00/OrderCenter/blob/master/static/img/170649.jpg)
